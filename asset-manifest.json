@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Blogiverse-website/static/css/main.1a1fde33.css",
+    "main.js": "/Blogiverse-website/static/js/main.bd55f881.js",
+    "static/media/like.png": "/Blogiverse-website/static/media/like.f70eecd33240ff50265d.png",
+    "index.html": "/Blogiverse-website/index.html",
+    "main.1a1fde33.css.map": "/Blogiverse-website/static/css/main.1a1fde33.css.map",
+    "main.bd55f881.js.map": "/Blogiverse-website/static/js/main.bd55f881.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a1fde33.css",
+    "static/js/main.bd55f881.js"
+  ]
+}
