@@ -19,7 +19,7 @@ const AllPostUser = ()=>
     useEffect( ()=>
     {
         alluserposts();
-    },[])
+    })
     
     const alluserposts = async()=>
     {

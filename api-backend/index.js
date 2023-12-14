@@ -33,7 +33,7 @@ app.use('/api/v1/comments', commentroute);
 
 // Error Handle route
 app.use(errorHandlerMiddleware);
-
+const port = 5000;
 // connecting with database
 const start = async ()=>
 {
@@ -41,9 +41,9 @@ const start = async ()=>
     {
         await connectDB(process.env.MONGO_URL);
         console.log("MONGO is Connected")
-        app.listen(process.env.PORT,()=>
+        app.listen(port,()=>
         {
-            console.log(`Server is listening on Port ${process.env.PORT}`)
+            console.log(`Server is listening on Port ${port}`)
         })
     }
     catch(error){

@@ -57,9 +57,17 @@ const doLogin = async (req,res)=>
     }
 
     //creating token
-    const authtoken = jwt.sign({email,id:user._id},process.env.JWT_SECRET);
+    //providing error handling when token is not created
+    try{
+        const authtoken = jwt.sign({email,id:user._id}, "myKey");
+        res.json({"message":"Login Successful", "details":req.body,"token": authtoken, "id": user._id, "user":user});
+    }
+    catch(err){
+        console.log(err);
+    }
 
-    res.json({"message":"Login Successful", "details":req.body,"token": authtoken, "id": user._id, "user":user});
+    res.status(500).json({'msg':"error while processing login request"});
+    
 }
 
 // accessing profile for a user

@@ -22,3 +22,16 @@ Tech Stack: MERN
 6. express-validator for Validation
 7. jsonwebtokens for Authentication and Authorization
 8. Bcryptjs for Encrypting important details and passwords.
+
+
+
+## Some tips for better handling of the project
+### It is clearly understood that hardcoded values are not to be used in code. However, for the better ease of development these variables are hardcoded:
+1. Port address (/index.js)
+2. JWT token key (/controller/auth-controller.js, /middleware/verify/token) - "myKey"
+3. Mongodb uri (/db/connect.js) - needs to be changed according to the local mongodb address
+
+Tools needed to install:
+1. NPM
+2. Node
+3. MongoDB
