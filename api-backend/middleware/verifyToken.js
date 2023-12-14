@@ -10,7 +10,7 @@ const authenticateUser = (req,res,next)=>
     }
     try
     {
-        const info = jwt.verify(token,process.env.JWT_SECRET);
+        const info = jwt.verify(token,"myKey");
         req.data = info
     }
     catch(err)
